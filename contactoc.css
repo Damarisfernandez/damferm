@@ -1,0 +1,244 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    background-color: #f4f4f9;
+    margin: 0;
+     background-color:   beige;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 22%;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 10px 20px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+}
+
+.navbar .logo img {
+    border-radius: 50%;
+    margin: 10px;
+    box-shadow: 8px 10px 15px rgba(0, 0, 0, 1.5);
+    transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.5);
+}
+
+.navbar .menu {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.navbar .menu a {
+    color: black;
+    margin: 0 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s;
+    padding: 10px;
+    border: 3px solid;
+    border-radius: 0px 20px 0px 20px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 1.5);
+}
+
+.navbar a:hover {
+    color: darkblue;
+    background-color: rgba(255, 255, 255, 0.4);
+    transform: scale(0.9);
+}
+
+.form-container {
+    background-color: black;
+    padding: 20px 40px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    height: 100%;
+    margin-top: 25vh;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: white;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: border-color 0.3s;
+}
+
+
+button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: green;
+    color: white;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: orange;
+}
+
+.social-media {
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.social-media p {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.social-media a {
+    font-size: 2em; 
+}
+
+.social-media a:hover {
+    color: black; 
+}
+
+.social-media img {
+    width: 70px;
+    height: 70px;
+    transition: transform 0.3s ease;
+}
+
+.social-media img:hover {
+    transform: scale(1.1); 
+}
+.social { 
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+    justify-content: center;
+}
+
+.social p {
+    margin: 0 0 10px;
+    font-size: 1.2em;
+    color: #ffffff;
+}
+
+.social div {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social a {
+    color: black; 
+    font-size: 2em;
+    transition: color 0.3s ease;
+}
+.social .facebook.twitter.whatsapp.instagram a:hover{
+    transform: scale(1.0);
+}
+
+.social .facebook a:hover {
+    color: #3b5998;
+}
+
+.social .twitter a:hover {
+    color: #1da1f2; 
+}
+
+.social .whatsapp a:hover {
+    color: #25d366; 
+}
+
+.social .instagram a:hover {
+    color: #e4405f;
+}
+@media (max-width: 768px) {
+    header {
+        height: auto;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar .logo img {
+        height: 80px;
+        width: 80px;
+    }
+
+    .navbar .menu a {
+        font-size: 1em;
+        padding: 8px;
+    }
+
+    .form-container {
+        margin-top: 20vh;
+        padding: 20px;
+    }
+
+    form input, form textarea {
+        padding: 8px;
+    }
+
+    form button {
+        padding: 10px 0;
+        font-size: 1em;
+    }
+
+    .social-media {
+        flex-direction: column;
+    }
+    .social a {
+        font-size: 1.5em;
+    }
+
+}
